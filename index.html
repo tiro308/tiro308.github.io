@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript">
-              /*Size is  set in pixels... supports being written as: '250px' */
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" async></script>
+    <script type="text/javascript" async>
+        /*Size is  set in pixels... supports being written as: '250px' */
         var magnifierSize = 250;
 
         /*How many times magnification of image on page.*/
-        var magnification = 4;
+        var magnification = 3;
 
         function magnifier() {
 
@@ -24,7 +24,7 @@
             }
 
             if(!($pointer.is('img'))){
-              alert('Object must be image.');
+              console.log('Object must be image.');
               return false;
             }
 
