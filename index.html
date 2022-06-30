@@ -5,7 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+          margin: 0;
+        }
+        p, h2{
+          font: bold 15px 'Open Sans', sans-serif;
+          color: #222;
+          text-align: center;
+        }
+        h2{
+          font-size: 35px;
+          margin: 10px 0;
+        }
+        img{
+          width: 700px;
+          display: block;
+          margin: auto;
+        }
+        .magnify{
+          border-radius: 50%;
+          border: 2px solid black;
+          position: absolute;
+          z-index: 20;
+          background-repeat: no-repeat;
+          background-color: white;
+          box-shadow: inset 0 0 20px rgba(0,0,0,.5);
+          display: none;
+          cursor: none;
+        }
+    </style>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    
+</head>
+<body>
+    
+    <h2>Fahre über die Waben</h2>
+
+    <img class="magnifiedImg" src="https://lh3.googleusercontent.com/O2EyacIygkd2ZUTlCSuQlO-183EDupLEX8nHrBdWuL55WURjeonUr7tXmCIj9u5W0gdZXej6P9t4-qgpWQiQAnuUk7wynpt8DSzIUU5GIt_jAw21fEXVtAp_Auv3T6rDa0NghooX=w2400" />
+    
+</body>
+    
     <script type="text/javascript" defer>
         /*Size is  set in pixels... supports being written as: '250px' */
         var magnifierSize = 250;
@@ -84,42 +125,6 @@
         magnify.magnifyImg('img', magnification, magnifierSize);
 
     </script>
-    <style>
-        body{
-          margin: 0;
-        }
-        p, h2{
-          font: bold 15px 'Open Sans', sans-serif;
-          color: #222;
-          text-align: center;
-        }
-        h2{
-          font-size: 35px;
-          margin: 10px 0;
-        }
-        img{
-          width: 700px;
-          display: block;
-          margin: auto;
-        }
-        .magnify{
-          border-radius: 50%;
-          border: 2px solid black;
-          position: absolute;
-          z-index: 20;
-          background-repeat: no-repeat;
-          background-color: white;
-          box-shadow: inset 0 0 20px rgba(0,0,0,.5);
-          display: none;
-          cursor: none;
-        }
-    </style>
-</head>
-<body>
     
-    <h2>Fahre über die Waben</h2>
-
-    <img class="magnifiedImg" src="https://lh3.googleusercontent.com/O2EyacIygkd2ZUTlCSuQlO-183EDupLEX8nHrBdWuL55WURjeonUr7tXmCIj9u5W0gdZXej6P9t4-qgpWQiQAnuUk7wynpt8DSzIUU5GIt_jAw21fEXVtAp_Auv3T6rDa0NghooX=w2400" />
     
-</body>
 </html>
